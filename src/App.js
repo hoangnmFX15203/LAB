@@ -1,19 +1,18 @@
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Main from '~/component/MainComponent';
-import React, { Component } from 'react';
+import React from 'react';
 import { DISHES } from './shared/dishes';
 import { BrowserRouter } from 'react-router-dom';
+import Component from '~/newFolder/labComponent';
 
-class App extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                <div>
-                    <Main />
-                </div>
-            </BrowserRouter>
-        );
-    }
+function App() {
+    return (
+        <BrowserRouter>
+            <div>
+                <Component />
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
